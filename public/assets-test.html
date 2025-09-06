@@ -1,0 +1,19 @@
+<!doctype html><meta charset="utf-8"><title>Assets Test</title>
+<pre id="out">Testing…</pre>
+<script>
+(async () => {
+  const out = document.getElementById('out');
+  async function ping(url) {
+    try {
+      const r = await fetch(url, {cache:'no-store'});
+      return `${url}  ${r.ok ? '✅' : ('❌ ' + r.status)}`;
+    } catch (e) { return `${url}  ❌ ${e}`; }
+  }
+  const results = await Promise.all([
+    ping('/libs/tflite/tf-tflite.min.js'),
+    ping('/models/handitalk_landmarks.tflite'),
+    ping('/models/class_names_landmarks.json')
+  ]);
+  out.textContent = results.join('\n');
+})();
+</script>

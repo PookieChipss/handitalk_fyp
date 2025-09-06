@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>HandiTalk — Sign in</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<header class="bar"><strong>HandiTalk</strong></header>
+
+<main class="wrap">
+  <section class="card" id="view-login">
+    <h2>Sign in</h2>
+    <label>Email <input id="email" type="email" autocomplete="username" required></label>
+    <label>Password <input id="password" type="password" autocomplete="current-password" required></label>
+
+    <div class="row">
+      <button id="btnSignIn">Sign in</button>
+      <a class="btn-outline" href="/signup.html">Create account</a>
+    </div>
+
+    <p style="margin-top:8px"><a class="link" href="/forgot.html">Forgot password?</a></p>
+    <div id="msg" class="note"></div>
+  </section>
+</main>
+
+<footer class="foot">Firebase Auth + Hosting • MediaPipe + TFLite for Sign→Text</footer>
+
+<script type="module" src="/app/auth.js"></script>
+</body>
+</html>

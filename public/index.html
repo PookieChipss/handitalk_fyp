@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>HandiTalk — Sign in</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<header class="bar"><strong>HandiTalk</strong></header>
+
+<main class="wrap">
+  <div class="auth-layout">
+    <div class="hero" aria-hidden="true"></div>
+
+    <section class="card">
+      <h2>Login here</h2>
+      <p class="note">Welcome back you’ve been missed!</p>
+
+      <label>Email
+        <input id="email" type="email" autocomplete="username" placeholder="you@example.com" required>
+      </label>
+      <label>Password
+        <input id="password" type="password" autocomplete="current-password" placeholder="••••••••" required>
+      </label>
+
+      <p class="note"><a class="link" href="/forgot.html">Forgot your Password?</a></p>
+
+      <div class="row">
+        <button id="btnSignIn" class="btn-full">Sign in</button>
+      </div>
+
+      <p class="note">No account? <a class="link" href="/signup.html">Create new account</a></p>
+
+      <div id="msg" class="note"></div>
+    </section>
+  </div>
+</main>
+
+<script type="module" src="/app/auth.js"></script>
+</body>
+</html>

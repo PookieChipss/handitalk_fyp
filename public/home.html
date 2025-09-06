@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>HandiTalk — Home</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<header class="bar">
+  <strong>HandiTalk</strong>
+  <div class="spacer"></div>
+  <span id="who" class="chip"></span>
+  <button id="btnSignOut" class="btn-outline">Sign out</button>
+</header>
+
+<main class="wrap">
+  <div id="verifyBanner" class="banner" style="display:none">
+    Please verify your email to unlock everything.
+    <button id="btnResend" class="btn-outline">Resend</button>
+    <button id="btnRefresh" class="btn-outline">I’ve verified</button>
+  </div>
+
+  <section class="grid">
+    <a class="tile" href="/sign.html">
+      <div class="tile-title">Sign → Text</div>
+      <div class="tile-note">Camera-based real-time</div>
+    </a>
+
+    <button class="tile" disabled>
+      <div class="tile-title">Text → Sign</div>
+      <div class="tile-note">Coming soon</div>
+    </button>
+
+    <button class="tile" disabled>
+      <div class="tile-title">Therapy</div>
+      <div class="tile-note">Practice sessions</div>
+    </button>
+
+    <button class="tile" disabled>
+      <div class="tile-title">Progress</div>
+      <div class="tile-note">Stats & streaks</div>
+    </button>
+  </section>
+</main>
+
+<script type="module" src="/app/guard.js"></script>
+</body>
+</html>

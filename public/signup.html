@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>HandiTalk — Create account</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<header class="bar"><a class="link" href="/">← Back</a> <strong>HandiTalk</strong></header>
+
+<main class="wrap">
+  <div class="auth-layout">
+    <div class="hero" aria-hidden="true"></div>
+
+    <section class="card">
+      <h2>Create Account</h2>
+
+      <label>User name
+        <input id="suName" type="text" placeholder="Your name" required>
+      </label>
+
+      <label>Email
+        <input id="suEmail" type="email" autocomplete="username" placeholder="you@example.com" required>
+      </label>
+
+      <label>Password
+        <input id="suPass" type="password" autocomplete="new-password" placeholder="Min 6 characters" required>
+      </label>
+
+      <div class="row" style="margin-top:12px">
+        <button id="btnCreate" class="btn-full">Create account</button>
+      </div>
+
+      <p class="note">Already have an account? <a class="link" href="/">Log in</a></p>
+      <div id="suMsg" class="note"></div>
+    </section>
+  </div>
+</main>
+
+<script type="module" src="/app/auth.js"></script>
+</body>
+</html>

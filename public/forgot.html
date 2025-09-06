@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>HandiTalk — Reset password</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<header class="bar"><a class="link" href="/">← Back</a> <strong>HandiTalk</strong></header>
+
+<main class="wrap">
+  <section class="card">
+    <h2>Reset password</h2>
+    <label>Email
+      <input id="fpEmail" type="email" placeholder="you@example.com" required>
+    </label>
+    <div class="row" style="margin-top:12px">
+      <button id="btnReset" class="btn-full">Send reset email</button>
+    </div>
+    <div id="fpMsg" class="note"></div>
+  </section>
+</main>
+
+<script type="module" src="/app/auth.js"></script>
+</body>
+</html>
